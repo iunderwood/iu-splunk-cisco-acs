@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8'?>
+<dashboard>
+  <label>Cisco ACS Summary</label>
+
+  <row>
+  	<chart>
+  		<title>Event Type Summary</title>
+  		<earliestTime>-24h@h</earliestTime>
+  		<searchName>IU_CISACS - Summary Type</searchName>
+      <option name="charting.axisTitleX.text">Severity</option>
+      <option name="charting.axisTitleY.text">Events</option>
+      <option name="charting.axisY.scale">log</option>
+      <option name="charting.chart">bar</option>
+      <option name="charting.chart.axisX">Type</option>
+      <option name="charting.chart.axisY">Events</option>
+      <option name="charting.primaryAxisTitle.text"/>
+      <option name="charting.secondaryAxis.scale">log</option>
+      <option name="charting.secondaryAxisTitle.text"></option>
+  	</chart>
+  	<chart>
+  		<title>ACS Hosts</title>
+  		<earliestTime>-1d</earliestTime>
+  		<searchName>IU_CISACS - Summary Hosts</searchName>
+			<option name="charting.chart">pie</option>
+  	</chart>
+  </row>
+  <row>
+    <chart>
+      <searchName>IU_CISACS - Event Timeline</searchName>
+      <title>Event Timeline</title>
+      <earliestTime>-1d</earliestTime>
+      <option name="charting.axisTitleX.text">Time</option>
+      <option name="charting.axisTitleY.text">Events</option>
+      <option name="charting.axisY.scale">linear</option>
+      <option name="charting.chart">column</option>
+      <option name="charting.chart.stackMode">stacked</option>
+      <option name="charting.primaryAxisTitle.text"/>
+      <option name="charting.secondaryAxis.scale">linear</option>
+      <option name="charting.secondaryAxisTitle.text"/>
+    </chart>
+  </row>
+
+</dashboard>

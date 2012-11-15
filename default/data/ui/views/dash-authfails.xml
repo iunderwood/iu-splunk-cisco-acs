@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<dashboard>
+  <label>ACS Authentication Failures</label>
+
+  <row>
+  	<chart>
+      <searchName>IU_CISACS - Auth Fail Timeline</searchName>
+      <title>Failure Timeline</title>
+      <earliestTime>-24h@h</earliestTime>
+      <option name="charting.axisTitleX.text">Time</option>
+      <option name="charting.axisTitleY.text">Events</option>
+      <option name="charting.axisY.scale">linear</option>
+      <option name="charting.chart">column</option>
+      <option name="charting.chart.stackMode">stacked</option>
+      <option name="charting.primaryAxisTitle.text"/>
+      <option name="charting.secondaryAxis.scale">linear</option>
+      <option name="charting.secondaryAxisTitle.text"/>
+    </chart>
+  </row>
+
+  <row>
+  	<table>
+  		<searchName>Cisco ACS: Unique Auth Failures</searchName>
+  		<title>Unique Failures by IP</title>
+  		<earliestTime>-24h@h</earliestTime>
+  	</table>
+  </row>
+
+</dashboard>

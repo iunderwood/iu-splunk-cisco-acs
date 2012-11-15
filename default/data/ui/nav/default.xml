@@ -1,0 +1,12 @@
+<nav>
+	<view name="summary" default='true' />
+
+	<collection label="Dashboards">
+    <view source="unclassified" match="dash"/>
+  </collection>
+
+  <collection label="Searches">
+    <saved source="unclassified" />
+  </collection>
+
+</nav>
